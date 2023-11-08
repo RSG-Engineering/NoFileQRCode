@@ -25,7 +25,7 @@ Module Module1
             Directory.CreateDirectory(saveDirectory)
         End If
 
-        ' Save the QR code with the first 6 digits of the text as the filename
+        ' Save the QR code with the first 8 digits of the text as the filename
         Dim savePath As String = Path.Combine(saveDirectory, first6Digits & ".png")
         qrCodeImage.Save(savePath, ImageFormat.Png)
 
